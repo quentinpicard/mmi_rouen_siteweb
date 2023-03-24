@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit2:wght@700&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color:#2f169f ;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+header .left{
+    position: relative;
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+}
+
+header .left img{
+    width: 50%;
+}
+
+header .left h1{
+    font-family: 'Outfit2', sans-serif;
+    font-size: 2em;
+    margin-bottom: 0%;
+}
+
+header .right{
+    position: relative;
+    z-index: 50;
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* background-color: #4611d0; */
+    /* transform: rotate(7deg); */
+}
+header .right .bg{
+    z-index: 2;
+    width: 150%;
+    height: 500vh;
+    background-color: #4611d0;
+    position: absolute;
+    left: .5%;
+    transform: rotate(25deg);
+}
+header .right form{
+    position: relative;
+    z-index: 40;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 45%;
+    height: 70vh;
+    padding-left: 20%;
+    background-color: white;
+    text-align: left;
+}
+
+header .right form label{
+    width: 100%;
+}
+
+header .right form  #identifiant, #password{
+    width: 60%;
+    text-decoration: none;
+    border:none;
+    border-bottom: 5px solid  #2f169f;
+    margin-bottom: 7%;
+    padding-bottom: 1.5%;
+}
+
+#identifiants:focus, #mdp:focus{
+    outline:none;
+}
+
+
+header .right form  #bouton{
+    color: white;
+    width: 60%;
+    text-decoration: none;
+    margin-top: 8%;
+    padding: 4.5% 4.5%;
+    border: 5px solid #2f169f;
+    border-radius: 10px;  
+    background-color: #2f169f;
+    transition: .5s ease;
+    font-family: 'Outfit2', sans-serif;
+}
+
+header .right form #bouton:hover{
+    background-color: white;
+    color: #2f169f;
+}
